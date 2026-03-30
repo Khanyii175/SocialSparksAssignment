@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8BC34A"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="231dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="61dp"
+        android:background="#B64CAF50"
+        android:text="Social Spark App"
+        android:textAlignment="center"
+        android:textColor="#CDDC39"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:background="#D08BC34A"
+        android:text="Input Time Of Day:"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtTimeOfDay"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtTimeOfDay"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginBottom="84dp"
+        android:background="#111C3ED0"
+        android:ems="10"
+        android:hint="Time of day"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/btnReset"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/TextView" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="140dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:background="#9C27B0"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="@+id/btnReset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnReset" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="121dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="213dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="212dp"
+        android:background="#9C27B0"
+        android:text="Reset"
+        app:layout_constraintBottom_toTopOf="@+id/tvOutput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TextView" />
+
+    <TextView
+        android:id="@+id/tvSuggestionDisplay"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="220dp"
+        android:text="Suggestion display"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvOutput"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="40dp"
+        android:text="output"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSuggestionDisplay" />
+
+    <Button
+        android:id="@+id/btnSuggest"
+        android:layout_width="136dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="17dp"
+        android:text="Suggest"
+        app:layout_constraintBottom_toTopOf="@+id/btnSubmit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTimeOfDay" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
